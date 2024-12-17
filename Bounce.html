@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 8px solid red;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: relative;
+            background: linear-gradient(blue,pink);
+            animation: bounce  1.5s ease-in infinite alternate;
+        }
+            @keyframes bounce {
+                from{
+                    transform: translateY(0px);
+                }
+                to{
+                    transform: translateY(85vh) rotate(360deg)
+                }
+                
+            }
+            .ball1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: relative;
+            background: linear-gradient(blue,pink);
+            animation: bounce1  1.5s ease-in infinite alternate;
+        }
+            @keyframes bounce1 {
+                from{
+                    top: 150px;
+                    transform: translatex(0px);
+                }
+                to{
+                    top: 150px;
+                    transform:translateX(50vw) rotate(360deg) ;
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="ball1"></div>
+       </div>
+    </div>
+</body>
+</html>
